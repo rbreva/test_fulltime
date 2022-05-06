@@ -8,9 +8,14 @@ function createCard(repo){
         name
     } = repo
 
+    const {
+        node_id
+    } = repo
+
     const appContainer = document.getElementById('app')
 
-    card.innerHTML = name 
+     card.innerHTML = (`Nombre: ${name}, 
+     Node_id: ${node_id}`);
 
     appContainer.appendChild(card)
 }
@@ -27,3 +32,4 @@ fetch('https://api.github.com/users/rbreva/repos')
     }).catch(function(error) {
         console.log('error', error)
     })
+    
