@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Proxima_Nova_Rg';
+    src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima_Nova_Rg';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+	margin:0;
+	padding:0;
+	outline:none !important;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+body{
+	width: 100%;
+	background: #ffffff;
+	font-family: 'Proxima_Nova_Rg';
+    font-size: 14px;
+    color: #000000;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 27px;
+    margin-top: 50px;
+    background-color: #fbfbfb;
+    padding: 20px;
+}
+
+#app{
+    padding: 20px;
+}
+
+#app article{
+    border: 1px solid #ededed;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
